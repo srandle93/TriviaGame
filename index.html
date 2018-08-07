@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href=assets/css/style.css>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Trivia Game</title>
+</head>
+<body style= "background-image:url('assets/images/background_hw5.jpg')";"height:20%">
+    <h1 id="title">Pop Culture Trivia</h1>
+    <div class="container">
+        
+        <div id="timer"></div><br><br>
+        <div class="question"></div>What is a DM?
+            <form class="myForm">
+                <input type="radio" name="answer" value="wrong" onchange="radio_changed($(this).val())"checked> Distant Mother.
+                <input type="radio" name="answer" value="correct"onchange="radio_changed($(this).val())" checked> Direct Message.
+                <input type="radio" name="answer" value="wrong" onchange="radio_changed($(this).val())"checked> Duty Module.
+            </form><br>          
+        <div class="question"></div>Does Keke love Drake?
+            <form class="myForm">
+                <input type="radio" name="answer" value="wrong" onchange="radio_changed($(this).val())"checked> Yes.
+                <input type="radio" name="answer" value="wrong" onchange="radio_changed($(this).val())"checked> No.
+                <input type="radio" name="answer" value="correct" onchange="radio_changed($(this).val())"checked> Who Knows?
+            </form><br>
+        <div class="question"></div>If it's not true then it is...?
+            <form class="myForm">
+                <input type="radio" name="answer" value="correct" onchange="radio_changed($(this).val())"checked> Fake News!
+                <input type="radio" name="answer" value="wrong" onchange="radio_changed($(this).val())"checked> Super Duper True.
+                <input type="radio" name="answer" value="wrong" onchange="radio_changed($(this).val())"checked> Still True.
+            </form><br>
+            <button id="btn">Submit</button>
+
+
+
+    </div>
+
+<script src="./assets/javascript/app.js"></script>
+</body>
+</html>

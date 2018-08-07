@@ -1,0 +1,18 @@
+/* body {
+   
+} */
+#title{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+#timer{
+    font-size: 25px;
+}
+.question{
+    font-size: 20px;
+}
+.container{
+    text-align: center;
+    color: white;
+}
